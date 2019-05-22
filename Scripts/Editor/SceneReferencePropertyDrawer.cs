@@ -12,7 +12,7 @@ namespace DuskModules.SceneUtility.DuskEditor {
     
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) {
       SerializedProperty sceneAssetProperty = property.FindPropertyRelative("sceneAsset");
-      SerializedProperty scenePathProperty = property.FindPropertyRelative("scenePath");
+      SerializedProperty scenePathProperty = property.FindPropertyRelative("_scenePath");
       
       label = EditorGUI.BeginProperty(position, label, property);
       EditorGUI.BeginChangeCheck();

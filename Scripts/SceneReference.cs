@@ -116,6 +116,7 @@ namespace DuskModules.SceneUtility {
 		}
 
 		private SceneAsset GetAssetFromPath() {
+			Debug.Log(_scenePath);
 			if (_scenePath == null || _scenePath == "") return null;
 			return AssetDatabase.LoadAssetAtPath<SceneAsset>(_scenePath);
 		}
